@@ -15,9 +15,9 @@ public class HotelReservation {
     {
         this.hotelList = new ArrayList<>();
     }
-    public void addHotel(String hotelName, double rates)
+    public void addHotel(String hotelName,int weekDay,int weekEnd)
     {
-        Hotel hotel = new Hotel(hotelName,rates);
+        Hotel hotel = new Hotel(hotelName,weekDay,weekEnd);
         hotelList.add(hotel);
     }
     public Hotel getCheapestHotel(String startDate, String endDate)
@@ -40,8 +40,9 @@ public class HotelReservation {
     {
         System.out.println("Welcome to Hotel Reservation Program");
         HotelReservation hotelReservation = new HotelReservation();
-        hotelReservation.addHotel("Lakewood", 110);
-        hotelReservation.addHotel("Bridgewood", 160);
-        hotelReservation.addHotel("Ridgewood", 220);
+        hotelReservation.addHotel("Lakewood", 110,90);
+        hotelReservation.addHotel("Bridgewood", 160,50);
+        hotelReservation.addHotel("Ridgewood", 220,150);
     }
+
 }
