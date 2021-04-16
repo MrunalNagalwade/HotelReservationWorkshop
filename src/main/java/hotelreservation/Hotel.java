@@ -3,6 +3,8 @@ package hotelreservation;
 public class Hotel {
     String hotelName;
     double rates;
+    int rate;
+    int totalPrice;
 
     public Hotel(String hotelName,double rates)
     {
@@ -23,5 +25,15 @@ public class Hotel {
 
     public void setRates(double rates) {
         this.rates = rates;
+    }
+
+    public int calculatingTotalPrice(int numOfDays) {
+        this.totalPrice = numOfDays * rate;
+        return totalPrice;
+    }
+    @Override
+    public String toString() {
+        String str = "Hotel name : " + this.hotelName + " rates for regular customer : " + this.rates + " , "+totalPrice ;
+        return str;
     }
 }

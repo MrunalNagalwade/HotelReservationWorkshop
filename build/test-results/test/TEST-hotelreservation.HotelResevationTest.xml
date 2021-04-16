@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hotelreservation.HotelResevationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-15T18:14:53" hostname="MRUNAL" time="0.022">
+<testsuite name="hotelreservation.HotelResevationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-16T02:32:22" hostname="MRUNAL" time="0.033">
   <properties/>
-  <testcase name="addHotelTo()" classname="hotelreservation.HotelResevationTest" time="0.022"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="addHotelTo()" classname="hotelreservation.HotelResevationTest" time="0.033"/>
+  <system-out><![CDATA[Number of days: 3
+Cheapest hotel : Hotel name : Lakewood rates for regular customer : 110.0 , 0
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
